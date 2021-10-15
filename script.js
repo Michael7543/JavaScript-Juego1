@@ -50,7 +50,7 @@ function shuffle(arr) {
     while (num > 0) {
         index = Math.floor(Math.random() * num);          
         num--;
-        // Intercambiar el último elemento con él
+        // Intercambiar el último elemento 
         temp = arr[num];
         arr[num] = arr[index];
         arr[index] = temp;
@@ -62,7 +62,7 @@ function shuffle(arr) {
 function flipIt(backCard, frontCard) {
   //mostrar los colores
     document.getElementById(frontCard).style.zIndex = 30;
-//letrero de felizidades
+//letrero de fin del juego
     if (flipedCards == 0) {
         flipedCards++;
         frontMemory1 = frontCard;
@@ -91,7 +91,7 @@ function flipIt(backCard, frontCard) {
             flipedCards = 0;
           
           for(var i = 0; i < 24; i++) {
-            var checkDispayFront =             document.getElementById(cardsArray[i]).style.display;
+            var checkDispayFront = document.getElementById(cardsArray[i]).style.display;
             var checkDisplayBack =
         document.getElementById(cardsArrayBack[i]).style.display;
             if (checkDispayFront == "none" && checkDisplayBack == "none") {
